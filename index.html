@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+
+            <div class="result">
+                <h2>CASIO</h2>
+                <div class="output">
+                    <input class="output-value" type="text">
+                </div>
+                <hr>
+            </div>
+
+            <div class="keyboard">
+                <button onclick="clearMe()" id="clear" class="operator">C</button>
+                <button onclick="deleteMe()" id="backspace" class="operator">CE</button>
+                <button onclick="calculator('%')" class="operator">%</button>
+                <button onclick="calculator('/')" class="operator">&#247</button>
+                <button onclick="calculator('7')" class="number">7</button>
+                <button onclick="calculator('8')" class="number">8</button>
+                <button onclick="calculator('9')" class="number">9</button>
+                <button onclick="calculator('*')" class="operator">&times;</button>
+                <button onclick="calculator('4')" class="number">4</button>
+                <button onclick="calculator('5')" class="number">5</button>
+                <button onclick="calculator('6')" class="number">6</button>
+                <button onclick="calculator('-')" class="operator">-</button>
+                <button onclick="calculator('1')" class="number">1</button>
+                <button onclick="calculator('2')" class="number">2</button>
+                <button onclick="calculator('3')" class="number">3</button>
+                <button onclick="calculator('+')" class="operator">+</button>
+                <button class="empty"></button>
+                <button onclick="calculator('0')" class="number">0</button>
+                <button onclick="calculator('.')" class="number">.</button>
+                <button onclick="answer()" class="operator">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>    
+</body>
+</html>
